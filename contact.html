@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Graphic Designer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add your CSS styles for visual appeal here */
+    .contact-info {
+      display: flex; /* Arrange elements horizontally */
+      flex-wrap: wrap; /* Allow elements to wrap on small screens */
+      gap: 1rem; /* Add spacing between elements */
+    }
+    .contact-info p {
+      margin: 0; /* Remove default margin for better spacing */
+    }
+    .contact-info img {
+      width: 20px;
+      height: 20px; /* Adjust image size as needed */
+    }
+    .contact-form {
+      /* Add styles for form elements and layout */
+    }
+    .success-message,
+    .error-message {
+      display: none; /* Hide messages initially */
+      /* Add styles for success/error messages */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Graphic Designer Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you! Feel free to reach out if you have any questions, project inquiries, or just want to chat.</p>
+
+      <div class="contact-info">
+        <p>
+          <img src="Email.logo.jpg" alt="Email icon">
+          <a href="Nuwanperera792@gmail.com">Nuwanperera792@gmail.com</a>
+        </p>
+        <p>
+          <img src="call logo.jpeg" alt="Phone icon">
+          (+94) 77959198
+        </p>
+        <p>
+          <strong>Social Media:</strong>
+        </p>
+        <ul>
+          <li>
+            <a href="linkedin.com/in/nuwan-perera-a356751b7">
+              <img src="LinkedIn_icon.svg.png" alt="LinkedIn icon">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100016674578165">
+              <img src="facebook_logo.png" alt="facebook icon">
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p class="success-message">Your message has been sent successfully!</p>
+      <p class="error-message">There was an error sending your message. Please try again later.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Graphic Designer Portfolio</p>
+    </div>
+  </footer>
+
+  </body>
+</html>
